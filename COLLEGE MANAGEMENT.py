@@ -41,29 +41,29 @@ def addteacher():
     addroot.grab_set()
     addroot.geometry('470x470+220+200')
     addroot.title('Teacher Management System')
-    addroot.config(bg='blue')
+    addroot.config(bg='light grey')
     addroot.iconbitmap('manage.ico')
     addroot.resizable(False,False)
     #--------------------------------------add teacher labels---------------------------------#
-    idlabel=Label(addroot,text='Enter Id:',bg='gold2',font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=12,anchor='w')
+    idlabel=Label(addroot,text='Enter Id:',font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=12,anchor='w')
     idlabel.place(x=10,y=10)
 
-    namelabel = Label(addroot, text='Enter Name:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    namelabel = Label(addroot, text='Enter Name:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     namelabel.place(x=10, y=70)
 
-    mobilelabel = Label(addroot, text='Enter Mobile:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    mobilelabel = Label(addroot, text='Enter Mobile:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     mobilelabel.place(x=10, y=130)
 
-    emaillabel = Label(addroot, text='Enter Email:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    emaillabel = Label(addroot, text='Enter Email:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     emaillabel.place(x=10, y=190)
 
-    addresslabel = Label(addroot, text='Enter Address:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    addresslabel = Label(addroot, text='Enter Address:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     addresslabel.place(x=10, y=250)
 
-    genderlabel = Label(addroot, text='Enter Gender:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    genderlabel = Label(addroot, text='Enter Gender:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     genderlabel.place(x=10, y=310)
 
-    doblabel = Label(addroot, text='Enter D.O.B:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
+    doblabel = Label(addroot, text='Enter D.O.B:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
     doblabel.place(x=10, y=370)
 
     ##-------------------------------Add Teacher Entry--------------------------------##
@@ -96,7 +96,7 @@ def addteacher():
     dobentry = Entry(addroot, font=('roman', 15, 'bold'), bd=5, textvariable=dobval)
     dobentry.place(x=250, y=370)
     #-----------------------------------------addbutton---------------------------#
-    submitbtn=Button(addroot,text='Submit',font=('roman',15,'bold'),width=20,bd=5,activebackground='blue',activeforeground='white',bg='red',command=submitadd)
+    submitbtn=Button(addroot,text='Submit',font=('roman',15,'bold'),width=20,bd=5,activebackground='blue',activeforeground='white',bg='grey',command=submitadd)
     submitbtn.place(x=150,y=420)
     addroot.mainloop()
 
@@ -187,32 +187,32 @@ def searchteacher():
     searchroot.grab_set()
     searchroot.geometry('470x540+220+200')
     searchroot.title('Teacher Management System')
-    searchroot.config(bg='firebrick1')
+    searchroot.config(bg='white')
     searchroot.iconbitmap('manage.ico')
     searchroot.resizable(False,False)
     #--------------------------------------add teacher labels---------------------------------#
-    idlabel=Label(searchroot,text='Enter Id:',bg='gold2',font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=12,anchor='w')
+    idlabel=Label(searchroot,text='Enter Id:',font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=12,anchor='w')
     idlabel.place(x=10,y=10)
 
-    namelabel = Label(searchroot, text='Enter Name:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    namelabel = Label(searchroot, text='Enter Name:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     namelabel.place(x=10, y=70)
 
-    mobilelabel = Label(searchroot, text='Enter Mobile:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    mobilelabel = Label(searchroot, text='Enter Mobile:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     mobilelabel.place(x=10, y=130)
 
-    emaillabel = Label(searchroot, text='Enter Email:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    emaillabel = Label(searchroot, text='Enter Email:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     emaillabel.place(x=10, y=190)
 
-    addresslabel = Label(searchroot, text='Enter Address:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    addresslabel = Label(searchroot, text='Enter Address:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     addresslabel.place(x=10, y=250)
 
-    genderlabel = Label(searchroot, text='Enter Gender:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    genderlabel = Label(searchroot, text='Enter Gender:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     genderlabel.place(x=10, y=310)
 
-    doblabel = Label(searchroot, text='Enter D.O.B:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
+    doblabel = Label(searchroot, text='Enter D.O.B:',  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
     doblabel.place(x=10, y=370)
 
-    datelabel = Label(searchroot, text='Enter Date:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
+    datelabel = Label(searchroot, text='Enter Date:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
     datelabel.place(x=10, y=430)
 
 
@@ -253,7 +253,7 @@ def searchteacher():
 
 
     #-----------------------------------------addbutton---------------------------#
-    submitbtn=Button(searchroot,text='Submit',font=('roman',15,'bold'),width=20,bd=5,activebackground='blue',activeforeground='white',bg='red',command=search)
+    submitbtn=Button(searchroot,text='Submit',font=('roman',15,'bold'),width=20,bd=5,activebackground='blue',activeforeground='white',bg='grey',command=search)
     submitbtn.place(x=150,y=480)
     searchroot.mainloop()
 
@@ -304,35 +304,35 @@ def updateteacher():
     updateroot.grab_set()
     updateroot.geometry('470x585+220+160')
     updateroot.title('Teacher Management System')
-    updateroot.config(bg='firebrick2')
+    updateroot.config(bg='white')
     updateroot.iconbitmap('manage.ico')
     updateroot.resizable(False,False)
     #--------------------------------------add teacher labels---------------------------------#
-    idlabel=Label(updateroot,text='Enter Id:',bg='gold2',font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=12,anchor='w')
+    idlabel=Label(updateroot,text='Enter Id:',font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=12,anchor='w')
     idlabel.place(x=10,y=10)
 
-    namelabel = Label(updateroot, text='Enter Name:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    namelabel = Label(updateroot, text='Enter Name:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     namelabel.place(x=10, y=70)
 
-    mobilelabel = Label(updateroot, text='Enter Mobile:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    mobilelabel = Label(updateroot, text='Enter Mobile:',  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     mobilelabel.place(x=10, y=130)
 
-    emaillabel = Label(updateroot, text='Enter Email:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    emaillabel = Label(updateroot, text='Enter Email:', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     emaillabel.place(x=10, y=190)
 
-    addresslabel = Label(updateroot, text='Enter Address:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    addresslabel = Label(updateroot, text='Enter Address:',  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     addresslabel.place(x=10, y=250)
 
-    genderlabel = Label(updateroot, text='Enter Gender:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
+    genderlabel = Label(updateroot, text='Enter Gender:',  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=12, anchor='w')
     genderlabel.place(x=10, y=310)
 
-    doblabel = Label(updateroot, text='Enter D.O.B:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
+    doblabel = Label(updateroot, text='Enter D.O.B:',  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
     doblabel.place(x=10, y=370)
 
-    datelabel = Label(updateroot, text='Enter Date:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
+    datelabel = Label(updateroot, text='Enter Date:',  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3, width=12, anchor='w')
     datelabel.place(x=10, y=430)
 
-    timelabel = Label(updateroot, text='Enter Time:', bg='gold2', font=('times', 20, 'bold'), relief=GROOVE,borderwidth=3, width=12, anchor='w')
+    timelabel = Label(updateroot, text='Enter Time:',  font=('times', 20, 'bold'), relief=GROOVE,borderwidth=3, width=12, anchor='w')
     timelabel.place(x=10, y=490)
 
     ##-------------------------------Add Teacher Entry--------------------------------##
@@ -373,7 +373,7 @@ def updateteacher():
     timeentry = Entry(updateroot, font=('roman', 15, 'bold'), bd=5, textvariable=timeval)
     timeentry.place(x=250, y=490)
     #-----------------------------------------addbutton---------------------------#
-    submitbtn=Button(updateroot,text='Submit',font=('roman',15,'bold'),width=20,bd=5,activebackground='blue',activeforeground='white',bg='red',command=update)
+    submitbtn=Button(updateroot,text='Submit',font=('roman',15,'bold'),width=20,bd=5,activebackground='blue',activeforeground='white',bg='grey',command=update)
     submitbtn.place(x=150,y=540)
     cc=teachertable.focus()
     content=teachertable.item(cc)
@@ -464,15 +464,15 @@ def Connectdb():
     dbroot.geometry('470x250+800+230')
     dbroot.iconbitmap('manage.ico')
     dbroot.resizable(False,False)
-    dbroot.config(bg='blue')
+    dbroot.config(bg='white')
     #------------------------------Connectdb Labels------------------------------------------------#
-    hostlabel=Label(dbroot,text="Enter Host:",bg='gold2',font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=13,anchor='w')
+    hostlabel=Label(dbroot,text="Enter Host:",font=('times',20,'bold'),relief=GROOVE,borderwidth=3,width=13,anchor='w')
     hostlabel.place(x=10,y=10)
 
-    userlabel = Label(dbroot, text="Enter User:", bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=13, anchor='w')
+    userlabel = Label(dbroot, text="Enter User:",  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=13, anchor='w')
     userlabel.place(x=10, y=70)
 
-    passwordlabel = Label(dbroot, text="Enter Password:", bg='gold2', font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=13, anchor='w')
+    passwordlabel = Label(dbroot, text="Enter Password:",  font=('times', 20, 'bold'), relief=GROOVE, borderwidth=3,width=13, anchor='w')
     passwordlabel.place(x=10, y=130)
     #-------------------------------------------Connectdb Entry-------------------------------------#
     hostval=StringVar()
@@ -489,7 +489,7 @@ def Connectdb():
     passwordentry.place(x=250, y=130)
 
     ################################################Connectdb Button##################################
-    submitbutton=Button(dbroot,text='Submit',font=('roman',15,'bold'),bg='red',bd=5,width=20,activebackground='blue',activeforeground='white',command=submitdb)
+    submitbutton=Button(dbroot,text='Submit',font=('roman',15,'bold'),bg='grey',bd=5,width=20,activebackground='blue',activeforeground='white',command=submitdb)
     submitbutton.place(x=150,y=190)
 
     dbroot.mainloop()
@@ -537,46 +537,46 @@ import time
 import pandas
 root=Tk()
 root.title('Teacher Profile')
-root.config(bg='gold2')
+root.config(bg='light grey')
 root.geometry('1174x700+200+50')
 root.iconbitmap('manage.ico')
 root.resizable(False,False)
 ###########################################Frames#########################################
 ##--------------------------------------------------------------Data Entry Frame---------------------------------------------##
 
-DataEntryFrame=Frame(root,bg='gold2',relief=GROOVE,borderwidth=5)
+DataEntryFrame=Frame(root,bg='grey',relief=GROOVE,borderwidth=5)
 DataEntryFrame.place(x=10,y=80,width=500,height=600)
 
-frontlabel=Label(DataEntryFrame,text='--------------Welcome-------------',width=30,font=('arial',22,'italic bold'),bg='gold2')
+frontlabel=Label(DataEntryFrame,text='--------------Welcome-------------',width=30,font=('arial',22,'italic bold'),bg='light grey')
 frontlabel.pack(side=TOP,expand=True)
-addbtn=Button(DataEntryFrame,text='1. Add Teacher',width=25,font=('chiller',20,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=addteacher)
+addbtn=Button(DataEntryFrame,text='1. Add Teacher',width=25,font=('times',15,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=addteacher)
 addbtn.pack(side=TOP,expand=True)
 
-searchbtn=Button(DataEntryFrame,text='2. Search Teacher ',width=25,font=('chiller',20,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=searchteacher)
+searchbtn=Button(DataEntryFrame,text='2. Search Teacher ',width=25,font=('times',15,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=searchteacher)
 searchbtn.pack(side=TOP,expand=True)
 
-deletebtn=Button(DataEntryFrame,text='3. Delete Teacher',width=25,font=('chiller',20,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=deleteteacher)
+deletebtn=Button(DataEntryFrame,text='3. Delete Teacher',width=25,font=('times',15,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=deleteteacher)
 deletebtn.pack(side=TOP,expand=True)
 
-updatebtn=Button(DataEntryFrame,text='4. Update Teacher',width=25,font=('chiller',20,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=updateteacher)
+updatebtn=Button(DataEntryFrame,text='4. Update Teacher',width=25,font=('times',15,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=updateteacher)
 updatebtn.pack(side=TOP,expand=True)
 
-showallbtn=Button(DataEntryFrame,text='5. Show All',width=25,font=('chiller',20,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=showteacher)
+showallbtn=Button(DataEntryFrame,text='5. Show All',width=25,font=('times',15,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=showteacher)
 showallbtn.pack(side=TOP,expand=True)
 
-exportbtn=Button(DataEntryFrame,text='6. Export Data',width=25,font=('chiller',20,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=exportteacher)
+exportbtn=Button(DataEntryFrame,text='6. Export Data',width=25,font=('times',15,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=exportteacher)
 exportbtn.pack(side=TOP,expand=True)
 
-exitbtn=Button(DataEntryFrame,text='7. Exit',width=25,font=('chiller',20,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=exitteacher)
+exitbtn=Button(DataEntryFrame,text='7. Exit',width=25,font=('times',15,'bold'),bd=6,bg='Sky blue3',activebackground='blue',relief=RIDGE,activeforeground='white',command=exitteacher)
 exitbtn.pack(side=TOP,expand=True)
 
 ##-----------------------------------------------------------------------Show Data Frames------------------------##
-ShowDataFrame=Frame(root,bg="gold2",relief=GROOVE,borderwidth=5)
+ShowDataFrame=Frame(root,bg="light grey",relief=GROOVE,borderwidth=5)
 ShowDataFrame.place(x=550,y=80,width=620,height=600)
 
 ##=================================SHOW DATA FRAME====================================##
 style=ttk.Style()
-style.configure('Treeview.Heading',font=('chiller',20,'bold'),foreground='blue')
+style.configure('Treeview.Heading',font=('times',15,'bold'),foreground='blue')
 style.configure('Treeview',font=('times',15,'bold'),foreground='black',background='cyan')
 scroll_x=Scrollbar(ShowDataFrame,orient=HORIZONTAL)
 scroll_y=Scrollbar(ShowDataFrame,orient=VERTICAL)
@@ -619,7 +619,7 @@ clock=Label(root,font=('times',14,'bold'),relief=RIDGE,borderwidth=4,bg='lawn gr
 clock.place(x=0,y=0)
 tick()
 #########################################################CONNNECT DATA BASE BUTTON####################
-connectbutton=Button(root,text='Connect To Database',width=23,font=('chiller',19,'italic bold'),relief=RIDGE,borderwidth=4,bg='green2',activebackground='blue',activeforeground='white',command=Connectdb)
+connectbutton=Button(root,text='Connect To Database',width=23,font=('chiller',19,'italic bold'),relief=RIDGE,borderwidth=4,bg='light grey',activebackground='blue',activeforeground='white',command=Connectdb)
 
 connectbutton.place(x=930,y=0)
 root.mainloop()
